@@ -19,7 +19,7 @@ public class Etudiant {
  private String nom;
  private String prenom;
  private String cin;
-
+@JsonIgnore
  @ManyToOne
  private Institut institut;
  
@@ -48,7 +48,7 @@ public String getNom() {
 public void setNom(String nom) {
 	this.nom = nom;
 }
-public String getPrénom() {
+public String getPrenom() {
 	return prenom;
 }
 public void setPrenom(String prenom) {
